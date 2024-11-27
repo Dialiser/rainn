@@ -1,0 +1,44 @@
+ /* App Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(20, 20px);
+  grid-gap: 2px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(15, 20px);
+  grid-gap: 2px;
+}
+
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border: 1px solid #222;
+  transition: background-color 0.2s;
+}
+
+.grid-cell.rain-drop {
+  background-color: magenta; /* Falling rain color */
+}
